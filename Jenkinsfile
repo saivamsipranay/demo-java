@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Container run') {
             steps {
-                sh "docker container run -d -p ${params.PORT} demo-app:${BUILD_ID}"
+                sh "docker container run -d -p ${params.PORT}:8080 demo-app:${BUILD_ID}"
             }
         }
     }
