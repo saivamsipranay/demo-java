@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    parametes {
+    parameters {
         string(name: 'PORT', description: 'mention port number', defaultValue: '80')
     }
     stages {
