@@ -1,4 +1,4 @@
 FROM tomcat:9.0.96-jdk17-corretto
-COPY /demo-javatarget/demo.war ./webapps
+COPY ./target/demo.war ./webapps
 EXPOSE 8080
 CMD ["./bin/catalina.sh", "run"]
